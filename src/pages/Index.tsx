@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { ProductTable } from "@/components/ProductTable";
-import { ProductForm } from "@/components/ProductForm";
+import { ProductGrid } from "@/components/ProductGrid";
+import { ProductFormLuxury } from "@/components/ProductFormLuxury";
 import { sampleProducts } from "@/data/sampleProducts";
 import { Product } from "@/types/Product";
-import { Building2, Package } from "lucide-react";
 
 const Index = () => {
   const [products, setProducts] = useState<Product[]>(sampleProducts);
@@ -11,10 +10,10 @@ const Index = () => {
 
   const handleProductSubmit = (productData: {
     id: string;
+    name?: string;
     description: string;
     imageFile?: File;
   }) => {
-    // In a real app, you would upload the image and get back a URL
     const imageUrl = productData.imageFile 
       ? URL.createObjectURL(productData.imageFile) 
       : undefined;
@@ -36,7 +35,7 @@ const Index = () => {
         // Add new product
         const newProduct: Product = {
           id: productData.id,
-          name: `Product ${productData.id}`, // In real app, this would come from form
+          name: productData.name || `Product ${productData.id}`,
           description: productData.description,
           imageUrl,
           lastUpdated: new Date()
@@ -52,51 +51,38 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border bg-card shadow-sm">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center justify-center w-12 h-12 bg-primary rounded-lg">
-              <Building2 className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-foreground">Distributor Content Portal</h1>
-              <p className="text-muted-foreground">Manage product information and media assets</p>
-            </div>
+      {/* Refined Header */}
+      <header className="border-b border-border bg-card">
+        <div className="container mx-auto px-6 py-12">
+          <div className="max-w-4xl">
+            <h1 className="text-luxury-title mb-3">Distributor Content Portal</h1>
+            <div className="w-12 h-px bg-luxury-gold mb-4"></div>
+            <p className="text-luxury-subtitle">Manage product information and media assets</p>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8 space-y-8">
-        {/* Products Table */}
-        <ProductTable 
-          products={products} 
-          onSelectProduct={handleSelectProduct}
-        />
+      <main className="container mx-auto px-6 py-16 max-w-7xl">
+        <div className="space-y-16">
+          {/* Product Catalog Grid */}
+          <section>
+            <ProductGrid 
+              products={products} 
+              onSelectProduct={handleSelectProduct}
+            />
+          </section>
 
-        {/* Product Form */}
-        <ProductForm
-          products={products}
-          selectedProductId={selectedProductId}
-          onSubmit={handleProductSubmit}
-        />
-      </main>
-
-      {/* Footer */}
-      <footer className="border-t border-border bg-muted/30 mt-16">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Package className="h-4 w-4" />
-              <span>Content Portal v1.0</span>
-            </div>
-            <div>
-              {products.length} products in catalog
-            </div>
-          </div>
+          {/* Product Form */}
+          <section>
+            <ProductFormLuxury
+              products={products}
+              selectedProductId={selectedProductId}
+              onSubmit={handleProductSubmit}
+            />
+          </section>
         </div>
-      </footer>
+      </main>
     </div>
   );
 };
