@@ -19,6 +19,7 @@ export const sampleProducts: Product[] = [
     id: "PRD-003",
     name: "Ergonomic Office Chair",
     description: "Comfortable ergonomic office chair with lumbar support and adjustable height settings.",
+    imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=300&fit=crop&crop=center",
     lastUpdated: new Date("2024-01-08")
   },
   {
@@ -32,6 +33,7 @@ export const sampleProducts: Product[] = [
     id: "PRD-005",
     name: "USB-C Charging Station",
     description: "Multi-port USB-C charging station with fast charging support for multiple devices simultaneously.",
+    imageUrl: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=300&h=300&fit=crop&crop=center",
     lastUpdated: new Date("2024-01-05")
   }
 ];
