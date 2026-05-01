@@ -13,22 +13,23 @@ export function About() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
-            <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-4 block">About Us</span>
+            <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-4 block">About Dolce GRC</span>
             <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
-              Top building materials supplier in your local area
+              Nineteen years of crafting GRC in Agra
             </h2>
             <div className="w-12 h-0.5 bg-brand-blue mb-6" />
             <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
-              Welcome to Dolce GRC. We provide high-quality GRC and FRP building
-              materials for architects, contractors and homeowners. Our selection
-              is top-notch — we choose suppliers carefully so we can stock a wide
-              variety of materials suitable for every project.
+              Dolce GRC is a manufacturer of glass reinforced concrete based on
+              MG Road, Agra. For nearly two decades we have cast jali screens,
+              columns, cornices, balusters, paver blocks and bespoke architectural
+              elements for homes, hotels, temples and commercial projects across
+              Uttar Pradesh, Rajasthan and beyond.
             </p>
             <p className="text-luxury-body text-muted-foreground leading-relaxed">
-              Putting customers first is at the heart of how we work. Our
-              professional, knowledgeable team helps you find the right materials
-              at the right price, and makes buying your building supplies a
-              hassle-free experience.
+              Architects come to us when they want clean white walls, crisp
+              detail and a finish that lasts. Every piece is moulded in our own
+              workshop, hand finished by craftsmen who have been with us for
+              years, and dispatched ready to install.
             </p>
           </div>
 

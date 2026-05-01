@@ -49,9 +49,9 @@ export function Hero() {
               asChild
               className="h-12 px-8 bg-transparent border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground hover:text-luxury-navy"
             >
-              <a href="tel:+918433096575">
+              <a href="tel:+919897021167">
                 <Phone className="mr-2 h-4 w-4" />
-                +91 84330 96575
+                +91 98970 21167
               </a>
             </Button>
           </div>
