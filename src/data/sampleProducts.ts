@@ -1,44 +1,52 @@
 import { Product } from "@/types/Product";
-import headphonesImg from "@/assets/headphones-luxury.webp";
-import watchImg from "@/assets/watch-luxury.webp";
-import chairImg from "@/assets/chair-luxury.webp";
-import speakerImg from "@/assets/speaker-luxury.webp";
-import chargingStationImg from "@/assets/charging-station-luxury.webp";
+import jaliImg from "@/assets/prod-jali.jpg";
+import planterImg from "@/assets/prod-planter.jpg";
+import sculptureImg from "@/assets/prod-sculpture.jpg";
+import balusterImg from "@/assets/prod-baluster.jpg";
+import mouldingImg from "@/assets/prod-moulding.jpg";
+import claddingImg from "@/assets/prod-cladding.jpg";
 
 export const sampleProducts: Product[] = [
   {
-    id: "PRD-001",
-    name: "Professional Wireless Headphones",
-    description: "Premium noise-cancelling wireless headphones with 30-hour battery life and superior sound quality.",
-    imageUrl: headphonesImg,
-    lastUpdated: new Date("2024-01-15")
+    id: "GRC-001",
+    name: "GRC Jali",
+    description: "Intricately crafted Glass Reinforced Concrete jali screens. Lightweight, durable, and perfect for facades, partitions, and ventilated walls with timeless geometric patterns.",
+    imageUrl: jaliImg,
+    lastUpdated: new Date("2025-03-15")
   },
   {
-    id: "PRD-002", 
-    name: "Smart Fitness Watch",
-    description: "Advanced fitness tracking watch with GPS, heart rate monitoring, and smartphone connectivity.",
-    imageUrl: watchImg,
-    lastUpdated: new Date("2024-01-12")
+    id: "FRP-002",
+    name: "FRP Planters",
+    description: "Premium Fibre Reinforced Plastic planters in modern silhouettes. Weatherproof, lightweight, and designed to elevate landscapes, terraces, and indoor spaces.",
+    imageUrl: planterImg,
+    lastUpdated: new Date("2025-03-12")
   },
   {
-    id: "PRD-003",
-    name: "Ergonomic Office Chair",
-    description: "Comfortable ergonomic office chair with lumbar support and adjustable height settings.",
-    imageUrl: chairImg,
-    lastUpdated: new Date("2024-01-08")
+    id: "GRC-003",
+    name: "Sculptures",
+    description: "Hand-finished classical and contemporary sculptures cast in GRC. Built to weather the elements while bringing artistry to gardens, lobbies, and architectural niches.",
+    imageUrl: sculptureImg,
+    lastUpdated: new Date("2025-03-08")
   },
   {
-    id: "PRD-004",
-    name: "Portable Bluetooth Speaker",
-    description: "Compact waterproof Bluetooth speaker with 360-degree sound and 12-hour battery life.",
-    imageUrl: speakerImg,
-    lastUpdated: new Date("2024-01-20")
+    id: "GRC-004",
+    name: "Balusters",
+    description: "Elegant balusters and railings for balconies, staircases, and terraces. Strong GRC construction with refined detailing inspired by classical architecture.",
+    imageUrl: balusterImg,
+    lastUpdated: new Date("2025-03-20")
   },
   {
-    id: "PRD-005",
-    name: "USB-C Charging Station",
-    description: "Multi-port USB-C charging station with fast charging support for multiple devices simultaneously.",
-    imageUrl: chargingStationImg,
-    lastUpdated: new Date("2024-01-05")
+    id: "GRC-005",
+    name: "Moulding",
+    description: "Decorative cornices, trims, and architectural mouldings to add character to facades, ceilings, and door frames. Easy to install with crisp profiles.",
+    imageUrl: mouldingImg,
+    lastUpdated: new Date("2025-03-05")
+  },
+  {
+    id: "WC-006",
+    name: "Wall Cladding",
+    description: "Textured wall cladding panels that bring warmth and dimension to interior and exterior walls. Lightweight, durable, and available in natural finishes.",
+    imageUrl: claddingImg,
+    lastUpdated: new Date("2025-03-22")
   }
 ];
