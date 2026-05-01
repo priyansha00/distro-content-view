@@ -15,6 +15,7 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <button onClick={() => scrollTo("about")} className="text-muted-foreground hover:text-foreground transition-colors">About</button>
           <button onClick={() => scrollTo("products")} className="text-muted-foreground hover:text-foreground transition-colors">Products</button>
+          <button onClick={() => scrollTo("projects")} className="text-muted-foreground hover:text-foreground transition-colors">Projects</button>
           <button onClick={() => scrollTo("gallery")} className="text-muted-foreground hover:text-foreground transition-colors">Gallery</button>
           <button onClick={() => scrollTo("contact")} className="text-muted-foreground hover:text-foreground transition-colors">Contact</button>
         </nav>

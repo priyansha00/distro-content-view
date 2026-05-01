@@ -51,6 +51,39 @@ const Index = () => {
     });
   };
 
+  useEffect(() => {
+    const ld = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Dolce GRC",
+      image: "https://distro-content-view.lovable.app/og.jpg",
+      "@id": "https://distro-content-view.lovable.app/",
+      url: "https://distro-content-view.lovable.app/",
+      telephone: "+91-98970-21167",
+      email: "suneet.grc@gmail.com",
+      priceRange: "₹₹",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Near Deewani Crossing, MG Road",
+        addressLocality: "Agra",
+        postalCode: "282002",
+        addressRegion: "Uttar Pradesh",
+        addressCountry: "IN"
+      },
+      areaServed: ["Uttar Pradesh", "Rajasthan", "India"],
+      foundingDate: "2006",
+      description:
+        "Dolce GRC is a manufacturer of glass reinforced concrete in Agra, making jali, cornices, columns, balusters and paver blocks since 2006."
+    };
+    const tag = document.createElement("script");
+    tag.type = "application/ld+json";
+    tag.text = JSON.stringify(ld);
+    document.head.appendChild(tag);
+    return () => {
+      document.head.removeChild(tag);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -70,6 +103,8 @@ const Index = () => {
           </div>
         </section>
 
+        <Projects />
+        <Clients />
         <Gallery products={products} />
         <QuoteForm products={products} />
 
