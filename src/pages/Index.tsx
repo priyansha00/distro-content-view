@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
+import { Projects } from "@/components/site/Projects";
+import { Clients } from "@/components/site/Clients";
 import { Gallery } from "@/components/site/Gallery";
 import { QuoteForm } from "@/components/site/QuoteForm";
 import { Footer } from "@/components/site/Footer";
