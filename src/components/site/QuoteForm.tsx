@@ -51,9 +51,9 @@ export function QuoteForm({ products }: Props) {
           {/* Contact info */}
           <div className="space-y-4">
             {[
-              { icon: Phone, label: "Call us", value: "+91 84330 96575", href: "tel:+918433096575" },
-              { icon: Mail, label: "Email", value: "hello@dolcegrc.com", href: "mailto:hello@dolcegrc.com" },
-              { icon: MapPin, label: "Visit", value: "Showroom & Workshop, India", href: undefined }
+              { icon: Phone, label: "Call us", value: "+91 98970 21167", href: "tel:+919897021167" },
+              { icon: Mail, label: "Email", value: "suneet.grc@gmail.com", href: "mailto:suneet.grc@gmail.com" },
+              { icon: MapPin, label: "Visit", value: "Near Deewani Crossing, MG Road, Agra 282002", href: undefined }
             ].map(({ icon: Icon, label, value, href }) => (
               <Card key={label} className="border-border">
                 <CardContent className="p-5 flex items-start gap-4">
