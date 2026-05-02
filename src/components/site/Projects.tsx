@@ -91,29 +91,22 @@ const sculptures = [
 
 const otherProjects = [
   {
-    name: "Multi-Speciality Hospital",
+    name: "Multi Speciality Hospital",
     location: "Karauli, Rajasthan",
     scope: "Facade cladding, jali ventilators and cornices",
     blurb:
       "A calm, sanitary white envelope for a regional hospital. GRC let the team finish a large facade quickly with zero on site dust, which mattered for an active medical campus.",
   },
   {
-    name: "Boutique Hotel Renovation",
-    location: "Jaipur, Rajasthan",
-    scope: "Hand cast brackets, balusters and ceiling cornices",
-    blurb:
-      "Period detailing recreated in lightweight GRC so the heritage facade got its grandeur back without loading the original walls.",
-  },
-  {
     name: "Private Residence",
-    location: "Lucknow, Uttar Pradesh",
+    location: "Agra, Uttar Pradesh",
     scope: "Custom jali compound wall and entrance columns",
     blurb:
       "A clean white compound wall with a geometric jali pattern designed with the architect to give privacy without losing breeze.",
   },
   {
     name: "Temple Trust Project",
-    location: "Mathura, Uttar Pradesh",
+    location: "Bharatpur, Rajasthan",
     scope: "Sculptures, mouldings and decorative paver blocks",
     blurb:
       "Cast in our Agra workshop and transported in panels, installed in under three weeks with zero on site dust or noise.",
