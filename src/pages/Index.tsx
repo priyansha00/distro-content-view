@@ -105,7 +105,7 @@ const Index = () => {
 
         <Projects />
         <Clients />
-        <Gallery products={products} />
+        <Gallery />
         <QuoteForm products={products} />
 
         {/* Distributor admin section (kept) */}
