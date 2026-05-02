@@ -38,9 +38,9 @@ export function Clients() {
             </p>
           </div>
           <div className="mt-8 pt-6 border-t border-border">
-            <p className="text-sm font-medium">Suneet, Dolce GRC</p>
+            <p className="text-sm font-medium">Mr. Rajeev Surana</p>
             <p className="text-xs text-muted-foreground">
-              Manufacturer, MG Road, Agra
+              Owner, Woman's Central, Agra
             </p>
           </div>
         </div>
