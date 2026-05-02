@@ -25,8 +25,8 @@ export function Hero() {
             Top Building Materials Supplier
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6">
-            Walls that wear <br />
-            <span className="font-semibold">a little more grace.</span>
+            Creating facades that stand <br />
+            <span className="font-semibold">the test of time, beautifully.</span>
           </h1>
           <div className="w-12 h-0.5 bg-brand-blue mb-6" />
           <p className="text-base md:text-lg text-primary-foreground/85 mb-10 leading-relaxed">
@@ -40,7 +40,7 @@ export function Hero() {
               onClick={() => scrollTo("contact")}
               className="bg-brand-blue hover:bg-brand-blue-dark text-primary-foreground h-12 px-8"
             >
-              Get a Free Quote
+              Specify with Confidence
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button
