@@ -9,7 +9,7 @@ export function Clients() {
             Our Clients
           </span>
           <h2 className="text-3xl md:text-4xl font-light tracking-tight">
-            Pioneers of GRC in Uttar Pradesh and Jaipur
+            Among the first to bring GRC to Uttar Pradesh and Jaipur
           </h2>
           <div className="w-12 h-0.5 bg-brand-blue mx-auto mt-5" />
         </div>

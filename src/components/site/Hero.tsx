@@ -25,14 +25,14 @@ export function Hero() {
             Top Building Materials Supplier
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6">
-            We promise <br />
-            <span className="font-semibold">beautifully white walls.</span>
+            Walls that wear <br />
+            <span className="font-semibold">a little more grace.</span>
           </h1>
           <div className="w-12 h-0.5 bg-brand-blue mb-6" />
           <p className="text-base md:text-lg text-primary-foreground/85 mb-10 leading-relaxed">
-            Premium GRC jali, planters, sculptures, balusters, mouldings and wall
-            cladding — pure white finishes, crisp detailing, and the craftsmanship
-            architects and contractors trust.
+            Handcrafted GRC jali, columns, cornices, planters and sculptures
+            cast in our Agra workshop. Lightweight, weather ready and finished
+            to the standard architects keep coming back for.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
