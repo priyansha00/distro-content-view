@@ -1,6 +1,26 @@
-import { MapPin, ArrowUpRight } from "lucide-react";
+import { MapPin } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 import womansCentralFacade from "@/assets/projects/womans-central-facade.webp";
 import womansCentralDetail from "@/assets/projects/womans-central-detail.webp";
+import womansCentralRender from "@/assets/projects/womans-central-render.jpg";
+import womansCentralConstruction from "@/assets/projects/womans-central-construction.jpg";
+
+import holidayInn1 from "@/assets/projects/holiday-inn-1.jpg";
+import holidayInn2 from "@/assets/projects/holiday-inn-2.jpg";
+import holidayInn3 from "@/assets/projects/holiday-inn-3.jpg";
+
+import planterUrn from "@/assets/projects/planter-tall-urn.jpg";
+import planterCream from "@/assets/projects/planter-classic-cream.jpg";
+import planterSquare from "@/assets/projects/planter-tapered-square.jpg";
+import planterBowl from "@/assets/projects/planter-bowl.jpg";
+
 import sculptWarriors from "@/assets/projects/sculpture-warriors.jpg";
 import sculptDragon1 from "@/assets/projects/sculpture-dragon-1.jpg";
 import sculptDragon2 from "@/assets/projects/sculpture-dragon-2.jpg";
@@ -8,19 +28,60 @@ import sculptDragon3 from "@/assets/projects/sculpture-dragon-3.jpg";
 import sculptDancer from "@/assets/projects/sculpture-dancer.jpg";
 import sculptNataraja from "@/assets/projects/sculpture-nataraja.jpg";
 
-const featured = {
-  name: "Woman's Central",
-  location: "MG Road, Agra",
-  scope: "Facade jali, fluted columns, cornices and decorative brackets",
-  blurb:
-    "A landmark retail facade on MG Road clad entirely in our handcrafted GRC. The fluted columns, layered cornices and signature white jali brackets give the building a quiet grandeur that holds up against the Agra sun, year after year.",
-  image: womansCentralFacade,
-  detail: womansCentralDetail,
-  year: "2023",
+type ProjectGallery = {
+  name: string;
+  location: string;
+  scope: string;
+  blurb: string;
+  year?: string;
+  images: { src: string; alt: string }[];
 };
 
+const galleries: ProjectGallery[] = [
+  {
+    name: "Woman's Central",
+    location: "MG Road, Agra",
+    scope: "Facade jali, fluted columns, cornices, decorative brackets",
+    year: "2023",
+    blurb:
+      "A landmark retail facade clad in our handcrafted GRC. Fluted columns, layered cornices and signature white brackets give the building a quiet grandeur that holds up against the Agra sun, year after year.",
+    images: [
+      { src: womansCentralFacade, alt: "Woman's Central facade in Agra finished in Dolce GRC" },
+      { src: womansCentralRender, alt: "Architectural render of Woman's Central facade by Dolce GRC" },
+      { src: womansCentralConstruction, alt: "Woman's Central under construction with GRC cladding installed" },
+      { src: womansCentralDetail, alt: "Detail of GRC brackets and columns at Woman's Central" },
+    ],
+  },
+  {
+    name: "Holiday Inn",
+    location: "Agra, Uttar Pradesh",
+    scope: "Sandstone finish wall cladding, jali balcony screens, cornice work",
+    year: "2022",
+    blurb:
+      "Warm sandstone tones and laser sharp jali balustrades for one of Agra's flagship hospitality landmarks. Lightweight GRC panels let us match the heritage palette of the city without overloading the structure.",
+    images: [
+      { src: holidayInn1, alt: "Holiday Inn Agra exterior with Dolce GRC sandstone cladding and jali balconies" },
+      { src: holidayInn2, alt: "Holiday Inn balcony jali screens and arched cornice detailing in GRC" },
+      { src: holidayInn3, alt: "Close up of GRC sandstone wall cladding and jali at Holiday Inn Agra" },
+    ],
+  },
+  {
+    name: "FRP & GRC Planters",
+    location: "Hotels and residences, Agra & Jaipur",
+    scope: "Bespoke FRP and GRC planters, custom finishes",
+    blurb:
+      "From classic urn silhouettes to faceted modern forms, our planters sit in lobbies, courtyards and terraces across the region. Lightweight, weather ready and finished in pure white or warm cream to match the interior palette.",
+    images: [
+      { src: planterUrn, alt: "Tall white GRC planter with palm in a hotel lobby" },
+      { src: planterCream, alt: "Classic cream coloured GRC urn planter with kentia palm" },
+      { src: planterSquare, alt: "Faceted tapered square white FRP planter" },
+      { src: planterBowl, alt: "Wide bowl shaped GRC planter with pebble dressing" },
+    ],
+  },
+];
+
 const sculptures = [
-  { src: sculptNataraja, label: "Nataraja, gold finish", span: "row-span-2" },
+  { src: sculptNataraja, label: "Nataraja, gold finish" },
   { src: sculptWarriors, label: "Cloaked warriors, twin set" },
   { src: sculptDragon1, label: "Winged dragon, in studio" },
   { src: sculptDancer, label: "Classical dancer, wall mount" },
@@ -29,6 +90,13 @@ const sculptures = [
 ];
 
 const otherProjects = [
+  {
+    name: "Multi-Speciality Hospital",
+    location: "Karauli, Rajasthan",
+    scope: "Facade cladding, jali ventilators and cornices",
+    blurb:
+      "A calm, sanitary white envelope for a regional hospital. GRC let the team finish a large facade quickly with zero on site dust, which mattered for an active medical campus.",
+  },
   {
     name: "Boutique Hotel Renovation",
     location: "Jaipur, Rajasthan",
@@ -52,6 +120,60 @@ const otherProjects = [
   },
 ];
 
+function ProjectCarousel({ project }: { project: ProjectGallery }) {
+  return (
+    <article className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mb-24 md:mb-32">
+      <div className="lg:col-span-8">
+        <Carousel opts={{ loop: true }} className="relative">
+          <CarouselContent>
+            {project.images.map((img, i) => (
+              <CarouselItem key={i}>
+                <div className="relative rounded-2xl overflow-hidden bg-luxury-pearl flex items-center justify-center h-[420px] md:h-[600px]">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="w-full h-full object-contain"
+                  />
+                  {project.year && i === 0 && (
+                    <div className="absolute top-5 left-5 bg-card/90 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs tracking-wider uppercase text-foreground">
+                      {project.year}
+                    </div>
+                  )}
+                  <div className="absolute bottom-4 right-4 bg-card/80 backdrop-blur-sm rounded-full px-3 py-1 text-[11px] tracking-wider text-foreground">
+                    {i + 1} / {project.images.length}
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-3 md:left-4 bg-card/90 hover:bg-card border-border" />
+          <CarouselNext className="right-3 md:right-4 bg-card/90 hover:bg-card border-border" />
+        </Carousel>
+      </div>
+
+      <div className="lg:col-span-4 flex flex-col justify-center">
+        <span className="inline-flex items-center gap-1.5 text-xs text-brand-blue-dark mb-4">
+          <MapPin className="h-3.5 w-3.5" />
+          {project.location}
+        </span>
+        <h3 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
+          {project.name}
+        </h3>
+        <p className="text-xs uppercase tracking-[0.18em] text-brand-blue mb-5">
+          {project.scope}
+        </p>
+        <p className="text-luxury-body text-muted-foreground leading-relaxed">
+          {project.blurb}
+        </p>
+        <p className="text-xs text-muted-foreground/70 mt-5 italic">
+          Swipe or use the arrows to view more images.
+        </p>
+      </div>
+    </article>
+  );
+}
+
 export function Projects() {
   return (
     <section id="projects" className="py-20 md:py-32 bg-background">
@@ -68,47 +190,9 @@ export function Projects() {
           <div className="w-12 h-0.5 bg-brand-blue mt-6" />
         </div>
 
-        {/* Featured: Woman's Central */}
-        <article className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 mb-24 md:mb-32">
-          <div className="lg:col-span-8 relative overflow-hidden rounded-2xl bg-luxury-pearl group">
-            <img
-              src={featured.image}
-              alt="Woman's Central facade in Agra clad in Dolce GRC jali, columns and cornices"
-              loading="lazy"
-              className="w-full h-[420px] md:h-[620px] object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-            />
-            <div className="absolute top-5 left-5 bg-card/90 backdrop-blur-sm rounded-full px-4 py-1.5 text-xs tracking-wider uppercase text-foreground">
-              Featured Project · {featured.year}
-            </div>
-          </div>
-
-          <div className="lg:col-span-4 flex flex-col justify-between">
-            <div>
-              <span className="inline-flex items-center gap-1.5 text-xs text-brand-blue-dark mb-4">
-                <MapPin className="h-3.5 w-3.5" />
-                {featured.location}
-              </span>
-              <h3 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
-                {featured.name}
-              </h3>
-              <p className="text-xs uppercase tracking-[0.18em] text-brand-blue mb-5">
-                {featured.scope}
-              </p>
-              <p className="text-luxury-body text-muted-foreground leading-relaxed">
-                {featured.blurb}
-              </p>
-            </div>
-
-            <div className="mt-8 overflow-hidden rounded-xl">
-              <img
-                src={featured.detail}
-                alt="Detail of GRC jali brackets and fluted columns at Woman's Central, Agra"
-                loading="lazy"
-                className="w-full h-56 object-cover"
-              />
-            </div>
-          </div>
-        </article>
+        {galleries.map((g) => (
+          <ProjectCarousel key={g.name} project={g} />
+        ))}
 
         {/* Sculpture studio grid */}
         <div className="mb-12 md:mb-16 flex items-end justify-between flex-wrap gap-4">
@@ -127,25 +211,28 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 auto-rows-[220px] md:auto-rows-[280px] mb-24 md:mb-32">
-          {sculptures.map((s, i) => (
-            <figure
-              key={i}
-              className={`relative overflow-hidden rounded-xl group bg-luxury-pearl ${s.span ?? ""}`}
-            >
-              <img
-                src={s.src}
-                alt={s.label}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-luxury-navy/80 via-luxury-navy/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <figcaption className="absolute bottom-4 left-4 right-4 text-primary-foreground text-sm tracking-wide opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-between">
-                <span>{s.label}</span>
-                <ArrowUpRight className="h-4 w-4" />
-              </figcaption>
-            </figure>
-          ))}
+        <div className="mb-24 md:mb-32">
+          <Carousel opts={{ loop: true, align: "start" }}>
+            <CarouselContent className="-ml-3 md:-ml-4">
+              {sculptures.map((s, i) => (
+                <CarouselItem key={i} className="pl-3 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <figure className="relative overflow-hidden rounded-xl bg-luxury-pearl h-[280px] md:h-[340px] flex items-center justify-center">
+                    <img
+                      src={s.src}
+                      alt={s.label}
+                      loading="lazy"
+                      className="w-full h-full object-contain"
+                    />
+                    <figcaption className="absolute bottom-3 left-3 right-3 text-foreground text-xs tracking-wide bg-card/85 backdrop-blur-sm rounded-md px-3 py-1.5">
+                      {s.label}
+                    </figcaption>
+                  </figure>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-2 bg-card/90 border-border" />
+            <CarouselNext className="right-2 bg-card/90 border-border" />
+          </Carousel>
         </div>
 
         {/* Other projects list */}

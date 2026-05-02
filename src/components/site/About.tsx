@@ -15,21 +15,31 @@ export function About() {
           <div>
             <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-4 block">About Dolce GRC</span>
             <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
-              Nineteen years of crafting GRC in Agra
+              Eight years of GRC, three decades of craft
             </h2>
             <div className="w-12 h-0.5 bg-brand-blue mb-6" />
             <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
-              Dolce GRC is a manufacturer of glass reinforced concrete based on
-              MG Road, Agra. For nearly two decades we have cast jali screens,
-              columns, cornices, balusters, paver blocks and bespoke architectural
-              elements for homes, hotels, temples and commercial projects across
-              Uttar Pradesh, Rajasthan and beyond.
+              Dolce GRC is the architectural concrete studio of S K Tiles, our
+              parent house on MG Road, Agra. For the last eight years our Dolce
+              GRC line has been casting jali screens, fluted columns, cornices,
+              balusters, planters, paver blocks and bespoke architectural
+              elements for homes, hotels, hospitals and temples across Uttar
+              Pradesh, Rajasthan and beyond.
+            </p>
+            <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
+              S K Tiles itself has been in the trade for thirty years, building
+              a reputation for vitrified tiles, double charge and full body
+              porcelain, large format slabs, GVT and PGVT collections, designer
+              wall tiles, anti skid outdoor pavers and curated natural stone.
+              Three decades of selection, specification and on site know how now
+              sit behind every Dolce GRC piece that leaves the workshop.
             </p>
             <p className="text-luxury-body text-muted-foreground leading-relaxed">
-              Architects come to us when they want clean white walls, crisp
-              detail and a finish that lasts. Every piece is moulded in our own
-              workshop, hand finished by craftsmen who have been with us for
-              years, and dispatched ready to install.
+              Architects come to us when they want crisp detail, clean finishes
+              and a partner who understands the full envelope, from the floor
+              specification to the facade jali. Every piece is moulded in our
+              own workshop, hand finished by craftsmen who have been with us
+              for years, and dispatched ready to install.
             </p>
           </div>
 
