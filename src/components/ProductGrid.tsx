@@ -56,10 +56,6 @@ export function ProductGrid({ products, onSelectProduct }: ProductGridProps) {
                   >
                     {product.id}
                   </Badge>
-                  <div className="flex items-center text-luxury-caption">
-                    <Calendar className="h-3 w-3 mr-1" />
-                    {product.lastUpdated.toLocaleDateString()}
-                  </div>
                 </div>
                 
                 {/* Product Name */}
