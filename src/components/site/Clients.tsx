@@ -18,23 +18,23 @@ export function Clients() {
           <Quote className="h-8 w-8 text-brand-blue mb-6" />
           <div className="space-y-5 text-luxury-body text-muted-foreground leading-relaxed">
             <p>
-              I found Dolce GRC through my architect, who I trust completely.
-              He told me they were the first people doing this kind of work in
-              Uttar Pradesh and Jaipur, and once you see the finish you
-              understand why his recommendation carried so much weight.
+              When we were planning Woman's Central on MG Road, my architect
+              recommended Dolce GRC without hesitation. He told me they were
+              among the first people doing this kind of work in Uttar Pradesh
+              and Jaipur, and once you see the finish in person you understand
+              why his recommendation carried so much weight.
             </p>
             <p>
               They are genuine pioneers in this industry. Long before GRC became
-              a buzzword on Indian project sites, the team in Agra was already
-              casting jali, cornices and columns by hand and shipping them across
-              the region. Architects, builders and homeowners keep coming back
-              for the same reason I did, the work is honest and the people are
-              easy to talk to.
+              a familiar name on Indian project sites, the team in Agra was
+              already casting jali, cornices and columns by hand and shipping
+              them across the region. The detailing on our facade still gets
+              compliments from visitors years later.
             </p>
             <p>
-              The few projects on this page are just a small sample. There is a
-              lot more in the workshop and on site right now. We will keep
-              sharing the rest as the buildings open.
+              For anyone serious about a building that ages well, this is the
+              team to talk to. Honest work, easy people, and a finish that
+              speaks for itself.
             </p>
           </div>
           <div className="mt-8 pt-6 border-t border-border">
