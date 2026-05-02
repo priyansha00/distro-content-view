@@ -4,7 +4,7 @@ const features = [
   { icon: ShieldCheck, title: "Quality Assured", desc: "Carefully sourced raw materials and rigorous QC on every product we ship." },
   { icon: Hammer, title: "Expert Craftsmanship", desc: "Skilled artisans casting GRC pieces with precision and consistency." },
   { icon: Users, title: "Customer First", desc: "Friendly, knowledgeable staff ready to help you choose the right material." },
-  { icon: Truck, title: "Pan-India Delivery", desc: "Safe, on-time delivery of building materials to project sites across India." }
+  { icon: Truck, title: "Pan India Delivery", desc: "Safe, on time delivery of building materials to project sites across India." }
 ];
 
 export function About() {

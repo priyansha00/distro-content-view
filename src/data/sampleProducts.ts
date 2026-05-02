@@ -24,7 +24,7 @@ export const sampleProducts: Product[] = [
   {
     id: "GRC-003",
     name: "Sculptures",
-    description: "Hand-finished classical and contemporary sculptures cast in GRC. Built to weather the elements while bringing artistry to gardens, lobbies, and architectural niches.",
+    description: "Hand finished classical and contemporary sculptures cast in GRC. Built to weather the elements while bringing artistry to gardens, lobbies, and architectural niches.",
     imageUrl: sculptureImg,
     lastUpdated: new Date("2025-03-08")
   },
