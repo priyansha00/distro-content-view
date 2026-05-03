@@ -11,7 +11,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 h-16 flex items-center justify-between max-w-7xl">
         <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
           <img src={logoDg} alt="Dolce GRC monogram" width={36} height={36} className="h-9 w-9 object-contain" />
-          <span className="text-luxury-body font-semibold tracking-tight">Dolce GRC</span>
+          <span className="font-display text-lg tracking-tight">Dolce GRC</span>
         </button>
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <button onClick={() => scrollTo("about")} className="text-muted-foreground hover:text-foreground transition-colors">About</button>

@@ -24,9 +24,13 @@ export function Gallery() {
   return (
     <section id="gallery" className="py-20 md:py-28 bg-luxury-pearl">
       <div className="container mx-auto px-6 max-w-7xl">
-        <div className="text-center mb-12">
-          <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-3 block">Gallery</span>
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight">Our Work in Detail</h2>
+        <div className="text-center mb-14">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="h-px w-10 bg-foreground/20" />
+            <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">04 — Gallery</span>
+            <span className="h-px w-10 bg-foreground/20" />
+          </div>
+          <h2 className="font-display text-3xl md:text-5xl font-light tracking-tight">Our work, in detail.</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
           {items.map((it, i) => (

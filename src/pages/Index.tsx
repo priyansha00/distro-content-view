@@ -94,10 +94,13 @@ const Index = () => {
         {/* Product catalogue */}
         <section id="products" className="py-20 md:py-28">
           <div className="container mx-auto px-6 max-w-7xl">
-            <div className="text-center mb-12">
-              <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-3 block">Available Products</span>
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight">Our Product Range</h2>
-              <div className="w-12 h-0.5 bg-brand-blue mx-auto mt-5" />
+            <div className="text-center mb-14">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <span className="h-px w-10 bg-foreground/20" />
+                <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">Catalogue</span>
+                <span className="h-px w-10 bg-foreground/20" />
+              </div>
+              <h2 className="font-display text-3xl md:text-5xl font-light tracking-tight">Our product range.</h2>
             </div>
             <ProductGrid products={products} onSelectProduct={setSelectedProductId} />
           </div>

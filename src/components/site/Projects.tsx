@@ -150,7 +150,7 @@ function ProjectCarousel({ project }: { project: ProjectGallery }) {
           <MapPin className="h-3.5 w-3.5" />
           {project.location}
         </span>
-        <h3 className="text-3xl md:text-4xl font-light tracking-tight mb-4">
+        <h3 className="font-display text-3xl md:text-4xl font-light tracking-tight mb-4">
           {project.name}
         </h3>
         <p className="text-xs uppercase tracking-[0.18em] text-brand-blue mb-5">
@@ -172,15 +172,15 @@ export function Projects() {
     <section id="projects" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Section header */}
-        <div className="max-w-3xl mb-16 md:mb-20">
-          <span className="text-xs tracking-[0.25em] uppercase text-brand-blue mb-4 block">
-            Selected Projects
-          </span>
-          <h2 className="text-4xl md:text-5xl font-light tracking-tight leading-[1.1]">
+        <div className="max-w-3xl mb-16 md:mb-24">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">02 — Projects</span>
+            <span className="h-px w-10 bg-foreground/20" />
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.02]">
             Buildings, facades and sculptures <br className="hidden md:block" />
-            <span className="italic text-muted-foreground">we have helped finish.</span>
+            <em className="italic text-muted-foreground">we have helped finish.</em>
           </h2>
-          <div className="w-12 h-0.5 bg-brand-blue mt-6" />
         </div>
 
         {galleries.map((g) => (
@@ -193,7 +193,7 @@ export function Projects() {
             <span className="text-xs tracking-[0.25em] uppercase text-brand-blue mb-3 block">
               From the Studio
             </span>
-            <h3 className="text-3xl md:text-4xl font-light tracking-tight">
+            <h3 className="font-display text-3xl md:text-4xl font-light tracking-tight">
               Hand cast sculptures
             </h3>
           </div>
@@ -234,7 +234,7 @@ export function Projects() {
             <span className="text-xs tracking-[0.25em] uppercase text-brand-blue mb-3 block">
               More Work
             </span>
-            <h3 className="text-2xl md:text-3xl font-light tracking-tight">
+            <h3 className="font-display text-2xl md:text-3xl font-light tracking-tight">
               Other recent projects
             </h3>
           </div>
@@ -246,7 +246,7 @@ export function Projects() {
                 className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 py-8 group cursor-default"
               >
                 <div className="md:col-span-4">
-                  <h4 className="text-xl font-light tracking-tight mb-1.5 group-hover:text-brand-blue transition-colors">
+                  <h4 className="font-display text-xl font-light tracking-tight mb-1.5 group-hover:text-brand-blue transition-colors">
                     {p.name}
                   </h4>
                   <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
