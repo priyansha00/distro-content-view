@@ -109,7 +109,7 @@ const otherProjects = [
     location: "Bharatpur, Rajasthan",
     scope: "Sculptures, mouldings and decorative paver blocks",
     blurb:
-      "Cast in our Agra workshop and transported in panels, installed in under three weeks with zero on site dust or noise.",
+      "Cast in our Agra factory and transported in panels, installed in under three weeks with zero on site dust or noise.",
   },
 ];
 

@@ -15,11 +15,11 @@ export function About() {
           <div>
             <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-4 block">About Dolce GRC</span>
             <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
-              Eight years of GRC, three decades of craft
+              Five decades of craft, one trusted house
             </h2>
             <div className="w-12 h-0.5 bg-brand-blue mb-6" />
             <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
-              Dolce GRC is the architectural concrete studio of S K Tiles, our
+              Dolce GRC is the architectural concrete arm of S K Tiles, our
               parent house on MG Road, Agra. For the last eight years our Dolce
               GRC line has been casting jali screens, fluted columns, cornices,
               balusters, planters, paver blocks and bespoke architectural
@@ -27,18 +27,18 @@ export function About() {
               Pradesh, Rajasthan and beyond.
             </p>
             <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
-              S K Tiles itself has been in the trade for thirty years, building
+              S K Tiles itself has been in the trade for five decades, building
               a reputation for vitrified tiles, double charge and full body
               porcelain, large format slabs, GVT and PGVT collections, designer
               wall tiles, anti skid outdoor pavers and curated natural stone.
-              Three decades of selection, specification and on site know how now
-              sit behind every Dolce GRC piece that leaves the workshop.
+              Fifty years of selection, specification and on site know how now
+              sit behind every Dolce GRC piece that leaves the factory.
             </p>
             <p className="text-luxury-body text-muted-foreground leading-relaxed">
               Architects come to us when they want crisp detail, clean finishes
               and a partner who understands the full envelope, from the floor
               specification to the facade jali. Every piece is moulded in our
-              own workshop, hand finished by craftsmen who have been with us
+              own factory, hand finished by craftsmen who have been with us
               for years, and dispatched ready to install.
             </p>
           </div>
