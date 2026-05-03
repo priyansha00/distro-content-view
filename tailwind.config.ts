@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
+				display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
