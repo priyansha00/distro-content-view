@@ -135,6 +135,21 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  .font-display {
+    font-family: 'Fraunces', ui-serif, Georgia, serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+
+  .eyebrow {
+    @apply text-[11px] tracking-[0.28em] uppercase text-muted-foreground;
+  }
+
+  .rule {
+    @apply h-px w-10 bg-foreground/30;
   }
   
   /* Luxury Typography Classes */
