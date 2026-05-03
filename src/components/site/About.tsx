@@ -13,11 +13,13 @@ export function About() {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
-            <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-4 block">About Dolce GRC</span>
-            <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
-              Five decades of craft, one trusted house
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">01 — About</span>
+              <span className="h-px w-10 bg-foreground/20" />
+            </div>
+            <h2 className="font-display text-4xl md:text-5xl font-light tracking-tight leading-[1.05] mb-8">
+              Five decades of craft, <em className="italic text-muted-foreground">one trusted house.</em>
             </h2>
-            <div className="w-12 h-0.5 bg-brand-blue mb-6" />
             <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
               Dolce GRC is the architectural concrete arm of S K Tiles, our
               parent house on MG Road, Agra. For the last eight years our Dolce
