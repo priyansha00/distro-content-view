@@ -1,10 +1,12 @@
+import logoDg from "@/assets/logo-dg.png";
+
 export function Footer() {
   return (
     <footer className="bg-luxury-navy text-primary-foreground/80">
       <div className="container mx-auto px-6 max-w-7xl py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <div className="w-9 h-9 rounded-md bg-brand-blue flex items-center justify-center font-bold text-primary-foreground">D</div>
+            <img src={logoDg} alt="Dolce GRC monogram" width={36} height={36} loading="lazy" className="h-9 w-9 object-contain bg-primary-foreground rounded-md p-1" />
             <span className="text-primary-foreground font-semibold">Dolce GRC</span>
           </div>
           <p className="text-sm leading-relaxed">

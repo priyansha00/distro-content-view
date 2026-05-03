@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logoDg from "@/assets/logo-dg.png";
 
 export function Navbar() {
   const scrollTo = (id: string) => {
@@ -9,7 +10,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 w-full border-b border-border bg-card/80 backdrop-blur-md">
       <div className="container mx-auto px-6 h-16 flex items-center justify-between max-w-7xl">
         <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-md bg-brand-blue flex items-center justify-center text-primary-foreground font-bold">D</div>
+          <img src={logoDg} alt="Dolce GRC monogram" width={36} height={36} className="h-9 w-9 object-contain" />
           <span className="text-luxury-body font-semibold tracking-tight">Dolce GRC</span>
         </button>
         <nav className="hidden md:flex items-center gap-8 text-sm">

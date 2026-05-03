@@ -31,7 +31,7 @@ export function Hero() {
           <div className="w-12 h-0.5 bg-brand-blue mb-6" />
           <p className="text-base md:text-lg text-primary-foreground/85 mb-10 leading-relaxed">
             Handcrafted GRC jali, columns, cornices, planters and sculptures
-            cast in our Agra workshop. Lightweight, weather ready and finished
+            cast in our Agra factory. Lightweight, weather ready and finished
             to the standard architects keep coming back for.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
