@@ -19,17 +19,17 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-luxury-navy/85 via-luxury-navy/70 to-luxury-navy/30" />
       </div>
 
-      <div className="relative container mx-auto px-6 max-w-7xl py-24 md:py-32 lg:py-40">
-        <div className="max-w-2xl text-primary-foreground">
-          <span className="inline-block text-xs tracking-[0.2em] uppercase text-brand-blue-light/90 mb-4">
-            Top Building Materials Supplier
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6">
-            Creating facades that stand <br />
-            <span className="font-semibold">the test of time, beautifully.</span>
+      <div className="relative container mx-auto px-6 max-w-7xl py-28 md:py-36 lg:py-44">
+        <div className="max-w-3xl text-primary-foreground">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="h-px w-10 bg-primary-foreground/40" />
+            <span className="eyebrow text-primary-foreground/70">Est. Agra · Architectural GRC</span>
+          </div>
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light leading-[1.02] mb-8">
+            Creating facades that <em className="italic font-light text-primary-foreground/85">stand the test</em> of time,
+            <span className="block">beautifully.</span>
           </h1>
-          <div className="w-12 h-0.5 bg-brand-blue mb-6" />
-          <p className="text-base md:text-lg text-primary-foreground/85 mb-10 leading-relaxed">
+          <p className="text-base md:text-lg text-primary-foreground/75 mb-10 leading-relaxed max-w-xl">
             Handcrafted GRC jali, columns, cornices, planters and sculptures
             cast in our Agra factory. Lightweight, weather ready and finished
             to the standard architects keep coming back for.
@@ -38,7 +38,7 @@ export function Hero() {
             <Button
               size="lg"
               onClick={() => scrollTo("contact")}
-              className="bg-brand-blue hover:bg-brand-blue-dark text-primary-foreground h-12 px-8"
+              className="bg-primary-foreground text-luxury-navy hover:bg-primary-foreground/90 h-12 px-8 rounded-none"
             >
               Specify with Confidence
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -47,7 +47,7 @@ export function Hero() {
               size="lg"
               variant="outline"
               asChild
-              className="h-12 px-8 bg-transparent border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground hover:text-luxury-navy"
+              className="h-12 px-8 bg-transparent border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground hover:text-luxury-navy rounded-none"
             >
               <a href="tel:+919897021167">
                 <Phone className="mr-2 h-4 w-4" />
@@ -55,6 +55,11 @@ export function Hero() {
               </a>
             </Button>
           </div>
+        </div>
+
+        <div className="hidden md:flex absolute bottom-10 right-10 items-center gap-4 text-primary-foreground/60 text-xs tracking-[0.25em] uppercase">
+          <span>Scroll</span>
+          <span className="h-px w-12 bg-primary-foreground/30" />
         </div>
       </div>
     </section>

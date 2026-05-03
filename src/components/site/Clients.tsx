@@ -4,14 +4,15 @@ export function Clients() {
   return (
     <section id="clients" className="py-20 md:py-28 bg-luxury-pearl">
       <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center mb-12">
-          <span className="text-xs tracking-[0.2em] uppercase text-brand-blue mb-3 block">
-            Our Clients
-          </span>
-          <h2 className="text-3xl md:text-4xl font-light tracking-tight">
-            Among the first to bring GRC to Uttar Pradesh and Jaipur
+        <div className="text-center mb-14">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="h-px w-10 bg-foreground/20" />
+            <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">03 — Clients</span>
+            <span className="h-px w-10 bg-foreground/20" />
+          </div>
+          <h2 className="font-display text-3xl md:text-5xl font-light tracking-tight leading-[1.05]">
+            Among the first to bring GRC to <em className="italic text-muted-foreground">Uttar Pradesh and Jaipur.</em>
           </h2>
-          <div className="w-12 h-0.5 bg-brand-blue mx-auto mt-5" />
         </div>
 
         <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-elegant">
