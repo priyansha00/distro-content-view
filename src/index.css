@@ -37,16 +37,16 @@ All colors MUST be HSL.
     --ring: 0 0% 9%;
 
     /* Luxury Design Tokens */
-    --luxury-gold: 43 74% 66%;
-    --luxury-gold-light: 43 74% 85%;
-    --luxury-navy: 215 60% 22%;
-    --luxury-navy-light: 215 50% 38%;
+    --luxury-gold: 38 45% 58%;
+    --luxury-gold-light: 38 45% 88%;
+    --luxury-navy: 215 45% 14%;
+    --luxury-navy-light: 215 35% 30%;
     --luxury-charcoal: 0 0% 20%;
     --luxury-platinum: 0 0% 95%;
     --luxury-pearl: 0 0% 97%;
-    --brand-blue: 218 65% 24%;
-    --brand-blue-dark: 220 70% 16%;
-    --brand-blue-light: 215 40% 92%;
+    --brand-blue: 215 45% 18%;
+    --brand-blue-dark: 215 50% 10%;
+    --brand-blue-light: 215 30% 94%;
     
     /* Elegant Shadows */
     --shadow-elegant: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
