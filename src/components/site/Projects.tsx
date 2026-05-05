@@ -177,9 +177,9 @@ export function Projects() {
             <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">02 — Projects</span>
             <span className="h-px w-10 bg-foreground/20" />
           </div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.02]">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-extralight tracking-tight leading-[1.02]">
             Buildings, facades and sculptures <br className="hidden md:block" />
-            <em className="italic text-muted-foreground">we have helped finish.</em>
+            <span className="text-muted-foreground">we have helped finish.</span>
           </h2>
         </div>
 
