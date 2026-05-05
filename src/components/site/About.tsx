@@ -17,8 +17,8 @@ export function About() {
               <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">01 — About</span>
               <span className="h-px w-10 bg-foreground/20" />
             </div>
-            <h2 className="font-display text-4xl md:text-5xl font-light tracking-tight leading-[1.05] mb-8">
-              Five decades of craft, <em className="italic text-muted-foreground">one trusted house.</em>
+            <h2 className="font-display text-4xl md:text-5xl font-extralight tracking-tight leading-[1.05] mb-8">
+              Five decades of craft, <span className="text-muted-foreground">one trusted house.</span>
             </h2>
             <p className="text-luxury-body text-muted-foreground leading-relaxed mb-4">
               Dolce GRC is the architectural concrete arm of S K Tiles, our

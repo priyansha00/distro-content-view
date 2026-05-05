@@ -25,8 +25,8 @@ export function Hero() {
             <span className="h-px w-10 bg-primary-foreground/40" />
             <span className="eyebrow text-primary-foreground/70">Est. Agra · Architectural GRC</span>
           </div>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light leading-[1.02] mb-8">
-            Creating facades that <em className="italic font-light text-primary-foreground/85">stand the test</em> of time,
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-extralight leading-[1.02] mb-8">
+            Creating facades that <span className="text-primary-foreground/70">stand the test</span> of time,
             <span className="block">beautifully.</span>
           </h1>
           <p className="text-base md:text-lg text-primary-foreground/75 mb-10 leading-relaxed max-w-xl">
