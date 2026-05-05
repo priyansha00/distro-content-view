@@ -10,8 +10,8 @@ export function Clients() {
             <span className="text-xs tracking-[0.28em] uppercase text-muted-foreground">03 — Clients</span>
             <span className="h-px w-10 bg-foreground/20" />
           </div>
-          <h2 className="font-display text-3xl md:text-5xl font-light tracking-tight leading-[1.05]">
-            Among the first to bring GRC to <em className="italic text-muted-foreground">Uttar Pradesh and Jaipur.</em>
+          <h2 className="font-display text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
+            Among the first to bring GRC to <span className="text-muted-foreground">Uttar Pradesh and Jaipur.</span>
           </h2>
         </div>
 
