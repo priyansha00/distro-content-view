@@ -139,9 +139,21 @@ All colors MUST be HSL.
   }
 
   .font-display {
-    font-family: 'Fraunces', ui-serif, Georgia, serif;
+    font-family: 'Inter Tight', 'Inter', ui-sans-serif, system-ui, sans-serif;
     font-optical-sizing: auto;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.035em;
+    font-weight: 300;
+  }
+
+  .font-mono-label {
+    font-family: 'Inter Tight', 'Inter', sans-serif;
+    font-feature-settings: "tnum" 1, "ss01" 1;
+    letter-spacing: 0.02em;
+  }
+
+  .num-marker {
+    @apply font-display text-[11px] tracking-[0.2em] text-foreground/40;
+    font-variant-numeric: tabular-nums;
   }
 
   .eyebrow {
